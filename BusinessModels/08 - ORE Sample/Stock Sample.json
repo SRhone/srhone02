@@ -1,0 +1,118 @@
+{
+  "logicalTable": {
+    "name": "Stock Sample",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Close",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Stock Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:07 - ORE Sample.Stock Sample.CLOSE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "High",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Stock Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:07 - ORE Sample.Stock Sample.HIGH"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Low",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Stock Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:07 - ORE Sample.Stock Sample.LOW"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Open",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Stock Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:07 - ORE Sample.Stock Sample.OPEN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Date",
+        "dataType": "TIMESTAMP",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Stock Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:07 - ORE Sample.Stock Sample.TIMESTAMP"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Volume",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Stock Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:07 - ORE Sample.Stock Sample.VOLUME"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Stock Sample",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:07 - ORE Sample.Stock Sample"
+          ]
+        }
+      }
+    ]
+  }
+}

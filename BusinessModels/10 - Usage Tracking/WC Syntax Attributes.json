@@ -1,0 +1,244 @@
+{
+  "logicalTable": {
+    "name": "WC Syntax Attributes",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Path_L0",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.PATH_LEVEL0"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Path level 0"
+      },
+      {
+        "name": "Path_L1",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.PATH_LEVEL1"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Path level 1"
+      },
+      {
+        "name": "Path_L2",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.PATH_LEVEL2"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Path level 2"
+      },
+      {
+        "name": "Path_L3",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.PATH_REST"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Path level 3"
+      },
+      {
+        "name": "Analysis Name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.REPORT_NAME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Analysis Path",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.REPORT_PATH"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Full Path"
+      },
+      {
+        "name": "Run Date",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.RUN_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Last Run Date",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "WC_LSQL_Dim",
+              "physicalExpression": {
+                "expressionTemplate": "MAX(%1)",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim.RUN_DATE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Analysis URL",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "'<a href= \"saw.dll?Go&path=' || %1 || '&Options=mdr\"> ' || %2 || '</a>'",
+            "expressionObjects": [
+              "logicalColumn:10 - Usage Tracking.WC Syntax Attributes.Analysis Path",
+              "logicalColumn:10 - Usage Tracking.WC Syntax Attributes.Analysis Name"
+            ]
+          }
+        }
+      }
+    ],
+    "primaryKey": [
+      "Analysis Path",
+      "Run Date"
+    ],
+    "logicalTableSources": [ {
+        "name": "WC_LSQL_Dim",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:10 - System DB (ORCL).Catalog.dbo.WC_LSQL_Dim"
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "All Folders",
+      "ragged": true,
+      "logicalLevels": [
+        {
+          "name": "All Folders",
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Path level 0",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Path_L0"
+          ],
+          "displayKey": "Path_L0"
+        },
+        {
+          "name": "Path level 1",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Path_L0",
+            "Path_L1"
+          ],
+          "displayKey": "Path_L0"
+        },
+        {
+          "name": "Path level 2",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Path_L0",
+            "Path_L1",
+            "Path_L2"
+          ],
+          "displayKey": "Path_L0"
+        },
+        {
+          "name": "Path level 3",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Path_L0",
+            "Path_L1",
+            "Path_L2",
+            "Path_L3"
+          ],
+          "displayKey": "Path_L0"
+        },
+        {
+          "name": "Full Path",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Analysis Path"
+          ],
+          "displayKey": "Analysis Path"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "WC Syntax Path [branch at level 'Path level 3']",
+          "levels": [ "All Folders", "Path level 0", "Path level 1", "Path level 2", "Path level 3", "Full Path" ]
+        }
+      ]
+    }
+  }
+}

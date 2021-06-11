@@ -1,0 +1,3861 @@
+{
+  "presentationTable": {
+    "name": "Offices",
+    "localization": {
+      "localizationKey": "Offices",
+      "nameVariable": "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Offices)"
+    },
+    "description": "Offices dimension attribute objects",
+    "alternateNames": [
+      "D"
+    ],
+    "presentationColumns": [ {
+        "name": "D1  Office",
+        "localization": {
+          "localizationKey": "D1  Office",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Offices_D1__Office)"
+        },
+        "sourceLogicalColumn": "logicalColumn:01 - Sample App Exa.D3 Offices.D1  Office",
+        "description": "Help : \r\nStores the Market description.",
+        "alternateNames": [
+          "Office"
+        ],
+        "dataFilters": [
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "D2  Department",
+        "localization": {
+          "localizationKey": "D2  Department",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Offices_D2__Department)"
+        },
+        "sourceLogicalColumn": "logicalColumn:01 - Sample App Exa.D3 Offices.D2  Department",
+        "description": "Help : \r\nStores the market area description.",
+        "alternateNames": [
+          "Dept"
+        ],
+        "dataFilters": [
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "D3  Organization",
+        "localization": {
+          "localizationKey": "D3  Organization",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Offices_D3__Organization)"
+        },
+        "sourceLogicalColumn": "logicalColumn:01 - Sample App Exa.D3 Offices.D3  Organization",
+        "description": "Help : \r\nStores the market district description.",
+        "alternateNames": [
+          "Organization"
+        ],
+        "dataFilters": [
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "name": "D4  Company",
+        "localization": {
+          "localizationKey": "D4  Company",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Offices_D4__Company)"
+        },
+        "sourceLogicalColumn": "logicalColumn:01 - Sample App Exa.D3 Offices.D4  Company",
+        "description": "Help : \r\nStores the market region description.",
+        "alternateNames": [
+          "Company"
+        ],
+        "dataFilters": [
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "hierarchies": [ {
+        "name": "Offices Hierarchy",
+        "localization": {
+          "localizationKey": "Offices Hierarchy",
+          "nameVariable": "VALUEOF(NQ_SESSION.CN_A_-_Sample_Sales_Offices_Offices_Hierarchy)"
+        },
+        "dataFilters": [
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole1",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+              "expressionObjects": [
+                "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "accessor": "role:SampleAppRole2",
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          },
+          {
+            "status": "ENABLED",
+            "filter": {
+              "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+              "expressionObjects": [
+                "logicalDimension:01 - Sample App.H5 Sales Rep",
+                "variable:USER_HIER_ID.USER_HIER_ID",
+                "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+              ]
+            }
+          }
+        ],
+        "sourceLogicalTable": "logicalTable:01 - Sample App Exa.D3 Offices",
+        "levels": [ {
+            "name": "Corporate Total",
+            "localization": {
+              "localizationKey": "Corporate Total",
+              "nameVariable": "VALUEOF(NQ_SESSION.CN_Offices_Offices_Hierarchy_Corporate_Total)"
+            },
+            "alternateNames": [
+              "Offices Total",
+              "Total Corporate",
+              "Total Eden Corp"
+            ],
+            "sourceLogicalLevel": "logicalLevel:01 - Sample App Exa.D3 Offices.Offices Total",
+            "dataFilters": [
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "Company",
+            "localization": {
+              "localizationKey": "Company",
+              "nameVariable": "VALUEOF(NQ_SESSION.CN_Offices_Offices_Hierarchy_Company)"
+            },
+            "sourceLogicalLevel": "logicalLevel:01 - Sample App Exa.D3 Offices.Offices Company",
+            "dataFilters": [
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              }
+            ],
+            "displayColumn": "presentationColumn:B - Sample Sales Exa.Offices.D4  Company"
+          },
+          {
+            "name": "Organization",
+            "localization": {
+              "localizationKey": "Organization",
+              "nameVariable": "VALUEOF(NQ_SESSION.CN_Offices_Offices_Hierarchy_Organization)"
+            },
+            "sourceLogicalLevel": "logicalLevel:01 - Sample App Exa.D3 Offices.Offices Organization",
+            "dataFilters": [
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              }
+            ],
+            "displayColumn": "presentationColumn:B - Sample Sales Exa.Offices.D3  Organization"
+          },
+          {
+            "name": "Department",
+            "localization": {
+              "localizationKey": "Department",
+              "nameVariable": "VALUEOF(NQ_SESSION.CN_Offices_Offices_Hierarchy_Department)"
+            },
+            "sourceLogicalLevel": "logicalLevel:01 - Sample App Exa.D3 Offices.Offices Department",
+            "dataFilters": [
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              }
+            ],
+            "displayColumn": "presentationColumn:B - Sample Sales Exa.Offices.D2  Department"
+          },
+          {
+            "name": "Offices",
+            "localization": {
+              "localizationKey": "Offices",
+              "nameVariable": "VALUEOF(NQ_SESSION.CN_Offices_Offices_Hierarchy_Offices)"
+            },
+            "sourceLogicalLevel": "logicalLevel:01 - Sample App Exa.D3 Offices.Offices Detail",
+            "dataFilters": [
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole1",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+                  "expressionObjects": [
+                    "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+                    "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+                    "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+                    "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "accessor": "role:SampleAppRole2",
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              },
+              {
+                "status": "ENABLED",
+                "filter": {
+                  "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+                  "expressionObjects": [
+                    "logicalDimension:01 - Sample App.H5 Sales Rep",
+                    "variable:USER_HIER_ID.USER_HIER_ID",
+                    "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+                  ]
+                }
+              }
+            ],
+            "displayColumn": "presentationColumn:B - Sample Sales Exa.Offices.D1  Office"
+          }
+        ]
+      }
+    ],
+    "dataFilters": [
+      {
+        "accessor": "role:SampleAppRole1",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+          "expressionObjects": [
+            "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+            "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole1",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+          "expressionObjects": [
+            "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+            "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole1",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+          "expressionObjects": [
+            "logicalColumn:06 - Federated Sources.D1 Products.P0  Product Number",
+            "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole1",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2)",
+          "expressionObjects": [
+            "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+            "variable:Custom Visibility Companies.VISIBILITY_COMPANIES"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole1",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " CAST (%1 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%2) AND  CAST (%3 AS VARCHAR ( 5 )) <>  VALUEOF(NQ_SESSION.%4)",
+          "expressionObjects": [
+            "logicalColumn:01 - Sample App.D3 Offices.D4k  Company Key",
+            "variable:Custom Visibility Companies.VISIBILITY_COMPANIES",
+            "logicalColumn:01 - Sample App.D1 Products (Level Based Hier).P3k  LOB Key",
+            "variable:Custom Visibility Products.VISIBILITY_PRODUCTS"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole2",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole2",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole2",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole2",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole2",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "accessor": "role:SampleAppRole2",
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      },
+      {
+        "status": "ENABLED",
+        "filter": {
+          "expressionTemplate": " ISDESCENDANT(%1,  VALUEOF(NQ_SESSION.%2)) OR %3 =  CAST ( VALUEOF(NQ_SESSION.%2) AS INTEGER )\r\n",
+          "expressionObjects": [
+            "logicalDimension:01 - Sample App.H5 Sales Rep",
+            "variable:USER_HIER_ID.USER_HIER_ID",
+            "logicalColumn:01 - Sample App.D5 Sales Rep (Parent Child Hier).E0  Sales Rep Number"
+          ]
+        }
+      }
+    ]
+  }
+}

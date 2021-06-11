@@ -1,0 +1,619 @@
+{
+  "logicalTable": {
+    "name": "D00 Time",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Beg of Mth Wid",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Beg_of_Mth_Wid"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Beg of Qtr Wid",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Beg_of_Qtr_Wid"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Beg of Week Wid",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Beg_of_Week_Wid"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cal Half",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Cal_Half"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cal Month",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Cal_Month"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cal Qtr",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Cal_Qtr"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cal Week",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Cal_Week"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Cal Year",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Cal_Year"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Calendar Date",
+        "dataType": "DATE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Calendar_Date"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Day Detail"
+      },
+      {
+        "name": "Day Key",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Day_Key"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Day Detail"
+      },
+      {
+        "name": "Day Of Month",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Day_Of_Month"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Day Of Week",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Day_Of_Week"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Day Of Year",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Day_Of_Year"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Days in Mth",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Days_in_Mth"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Days in Qtr",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Days_in_Qtr"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fscl Half",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Fscl_Half"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fscl Month",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Fscl_Month"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fscl Qtr",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Fscl_Qtr"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fscl Week",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Fscl_Week"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Fscl Year",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Fscl_Year"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Holiday",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Holiday"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Julian Day Num",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Julian_Day_Num"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Julian Month Num",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Julian_Month_Num"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Julian Qtr Num",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Julian_Qtr_Num"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Julian Week Num",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Julian_Week_Num"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Loaded",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Loaded"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Per Name Half",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Per_Name_Half"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Per Name Month",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Per_Name_Month"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Month"
+      },
+      {
+        "name": "Per Name Qtr",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Per_Name_Qtr"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Quarter"
+      },
+      {
+        "name": "Per Name Week",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Per_Name_Week"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Week"
+      },
+      {
+        "name": "Per Name Year",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "BIEE_TIME_DAY_D",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D.Per_Name_Year"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Year"
+      }
+    ],
+    "primaryKey": [
+      "Day Key"
+    ],
+    "logicalTableSources": [ {
+        "name": "BIEE_TIME_DAY_D",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:01 - Sample App Data (ORCL).BIFOD.BIEE_TIME_DAY_D"
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:X5 - OLTP Source (Fusion Order).H00 Time.Day Detail"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Year",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 3,
+          "primaryKey": [
+            "Per Name Year"
+          ],
+          "displayKey": "Per Name Year"
+        },
+        {
+          "name": "Quarter",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 12,
+          "primaryKey": [
+            "Per Name Qtr"
+          ],
+          "displayKey": "Per Name Qtr"
+        },
+        {
+          "name": "Month",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 36,
+          "primaryKey": [
+            "Per Name Month"
+          ],
+          "displayKey": "Per Name Month"
+        },
+        {
+          "name": "Week",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 150,
+          "primaryKey": [
+            "Per Name Week",
+            "Per Name Month"
+          ],
+          "displayKey": "Per Name Week"
+        },
+        {
+          "name": "Day Detail",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1000,
+          "primaryKey": [
+            "Calendar Date",
+            "Day Key"
+          ],
+          "displayKey": "Calendar Date"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "H00 Time [branch at level 'Week']",
+          "levels": [ "Total", "Year", "Quarter", "Month", "Week", "Day Detail" ]
+        }
+      ]
+    }
+  }
+}

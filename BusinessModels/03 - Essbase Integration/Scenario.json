@@ -1,0 +1,193 @@
+{
+  "logicalTable": {
+    "name": "Scenario",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Gen1,Scenario",
+        "dataType": "VARCHAR",
+        "sortBy": "Gen1,Scenario - Memnor",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Gen1,Scenario"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Gen1,Scenario"
+      },
+      {
+        "name": "Gen1,Scenario - Memnor",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Gen1,Scenario - Memnor"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Gen1,Scenario"
+      },
+      {
+        "name": "Gen1,Scenario - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Gen1,Scenario - Member Key"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Gen1,Scenario"
+      },
+      {
+        "name": "Scenarios",
+        "dataType": "VARCHAR",
+        "sortBy": "Scenarios - Memnor",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Scenarios"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Scenarios"
+      },
+      {
+        "name": "Scenarios - Memnor",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Scenarios - Memnor"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Scenarios"
+      },
+      {
+        "name": "Scenarios - Member Key",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Scenarios - Member Key"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Scenarios"
+      },
+      {
+        "name": "Scenario - Default",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Scenario - Default"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Scenario - Long Names",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Basic",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalCubeColumn:03 - Essbase GL Basic.BISAMPL2.Basic.Scenario - Long Names"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "primaryKey": [
+      "Gen1,Scenario",
+      "Scenarios"
+    ],
+    "logicalTableSources": [ {
+        "name": "Basic",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:03 - Essbase GL Basic.BISAMPL2.Basic"
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:03 - Essbase Integration.Scenario.Scenarios"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Gen1,Scenario",
+      "ragged": true,
+      "logicalLevels": [
+        {
+          "name": "Gen1,Scenario",
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Scenarios",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Scenarios - Member Key"
+          ]
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Scenario",
+          "levels": [ "Gen1,Scenario", "Scenarios" ]
+        }
+      ]
+    }
+  }
+}

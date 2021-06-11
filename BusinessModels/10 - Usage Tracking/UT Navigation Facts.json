@@ -1,0 +1,112 @@
+{
+  "logicalTable": {
+    "name": "UT Navigation Facts",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "# of Logical Queries",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_SUMMARY_ADVISOR",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.S_NQ_SUMMARY_ADVISOR.LOGICAL_QUERY_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Phys SQL Total"
+      },
+      {
+        "name": "# of Logical Fact Tables",
+        "dataType": "CHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_SUMMARY_ADVISOR",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.S_NQ_SUMMARY_ADVISOR.LOGICALFACTTABLEID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Phys SQL Total"
+      },
+      {
+        "name": "Avg Process Time in Sec",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "S_NQ_SUMMARY_ADVISOR",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:10 - System DB (ORCL).Catalog.dbo.S_NQ_SUMMARY_ADVISOR.PROCESSINGTIMEINMILLISEC"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Phys SQL Total"
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "S_NQ_SUMMARY_ADVISOR",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:10 - System DB (ORCL).Catalog.dbo.S_NQ_SUMMARY_ADVISOR"
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:10 - Usage Tracking.UT L Query.L SQL Detail",
+          "logicalLevel:10 - Usage Tracking.UT Navigation.UT Navigation Detail",
+          "logicalLevel:10 - Usage Tracking.UT L Query Time.Hour Min Detail",
+          "logicalLevel:10 - Usage Tracking.UT L Query Users.UT Users Detail"
+        ]
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Phys SQL Total",
+      "logicalLevels": [
+        {
+          "name": "Phys SQL Total",
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Logical Query ID",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 5000,
+          "primaryKey": [
+            "Logical Query Id"
+          ],
+          "displayKey": "Logical Query Id"
+        },
+        {
+          "name": "Physical SQL Detail",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 10000,
+          "primaryKey": [
+            "Phys Sql Sequence Id",
+            "Logical Query Id"
+          ],
+          "displayKey": "Phys Sql Sequence Id"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "UT Phys SQL [branch at level 'Logical Query ID']",
+          "levels": [ "Phys SQL Total", "Logical Query ID", "Physical SQL Detail" ]
+        }
+      ]
+    }
+  }
+}

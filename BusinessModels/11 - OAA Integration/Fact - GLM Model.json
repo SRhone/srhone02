@@ -1,0 +1,220 @@
+{
+  "logicalTable": {
+    "name": "Fact - GLM Model",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Attribute Value",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.ATTRIBUTE_VALUE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Coefficient",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.COEFFICIENT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Exp Coefficient",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.EXP_COEFFICIENT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Exp Lower Coeff Limit",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.EXP_LOWER_COEFF_LIMIT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Exp Upper Coeff Limit",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.EXP_UPPER_COEFF_LIMIT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Lower Coeff Limit",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.LOWER_COEFF_LIMIT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "P Value",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.P_VALUE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Std Coefficient",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.STD_COEFFICIENT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Std Error",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.STD_ERROR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Test Statistic",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.TEST_STATISTIC"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Upper Coeff Limit",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.UPPER_COEFF_LIMIT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Vif",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "D95 GLM Model Details",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details.VIF"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "D95 GLM Model Details",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:01 - Sample App Data (ORCL).BISAMPLE.D95 GLM Model Details"
+          ]
+        }
+      }
+    ]
+  }
+}

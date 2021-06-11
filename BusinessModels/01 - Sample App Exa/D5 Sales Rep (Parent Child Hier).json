@@ -1,0 +1,199 @@
+{
+  "logicalTable": {
+    "name": "D5 Sales Rep (Parent Child Hier)",
+    "description": "ZZZ - Not yet filled",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "E0  Sales Rep Number",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier).Employee_Key"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E1  Sales Rep Name",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier).Empl_Name"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E2  Sales Rep Type",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier).Type"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E4k  Position Key",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier).Postn_Key"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E7  Hire Date",
+        "dataType": "DATETIME",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier).Hire_Dt"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E8  Manager Number",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier).Mgr_Id"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E10 Length Of Service",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": " TIMESTAMPDIFF( SQL_TSI_YEAR , %1,  VALUEOF(NQ_SESSION.%2))",
+            "expressionObjects": [
+              "logicalColumn:01 - Sample App Exa.D5 Sales Rep (Parent Child Hier).E7  Hire Date",
+              "variable:LAST_REFRESH_DT.LAST_REFRESH_DT"
+            ]
+          }
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "E99  Closure Distance",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D51 Employees (PC Hier Closure Table).Distance"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      }
+    ],
+    "primaryKey": [
+      "E0  Sales Rep Number"
+    ],
+    "logicalTableSources": [ {
+        "name": "LTS1 SRep Hierarchy with Closure",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D50 Employees (PC Hier)",
+            "physicalTable:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D51 Employees (PC Hier Closure Table)"
+          ],
+          "logicalTableSourceJoins": [ {
+              "physicalJoin": "physicalJoin:02 - Sample App Exa Data (ORCL).D51 Employees (PC Hier Closure Table)_Foreign Key"
+            }
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:01 - Sample App Exa.H5 Sales Rep.Detail"
+        ]
+      }
+    ],
+    "hierarchyType": "PARENT_CHILD",
+    "parentChildHierarchy": {
+      "name": "H5 Sales Rep",
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Detail",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "E0  Sales Rep Number"
+          ],
+          "displayKey": "E0  Sales Rep Number"
+        }
+      ],
+      "relationshipTables": [ {
+          "logicalTableSource": "LTS1 SRep Hierarchy with Closure",
+          "table": "D51 Employees (PC Hier Closure Table)",
+          "memberKey": "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D51 Employees (PC Hier Closure Table).Member_Key",
+          "parentKey": "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D51 Employees (PC Hier Closure Table).Ancestor_Key",
+          "distance": "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D51 Employees (PC Hier Closure Table).Distance",
+          "leafNodeIdentifier": "physicalColumn:02 - Sample App Exa Data (ORCL).BISAMPLE_EXA.D51 Employees (PC Hier Closure Table).Is_Leaf"
+        }
+      ]
+    }
+  }
+}

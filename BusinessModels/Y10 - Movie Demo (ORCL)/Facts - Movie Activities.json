@@ -1,0 +1,90 @@
+{
+  "logicalTable": {
+    "name": "Facts - Movie Activities",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Number of Activities",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "MOVIE_FACT",
+              "physicalExpression": {
+                "expressionTemplate": "1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sales",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "MOVIE_FACT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Y10 - Movies Demo (ORCL).MOVIEDEMO.MOVIE_FACT.SALES"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Recommended",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "MOVIE_FACT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Y10 - Movies Demo (ORCL).MOVIEDEMO.MOVIE_FACT.RECOMMENDED"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Average Rating",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "MOVIE_FACT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Y10 - Movies Demo (ORCL).MOVIEDEMO.MOVIE_FACT.RATING"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "MOVIE_FACT",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Y10 - Movies Demo (ORCL).MOVIEDEMO.MOVIE_FACT"
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:Y10 - Movie Demo (ORCL).Movie.Movie Detail",
+          "logicalLevel:Y10 - Movie Demo (ORCL).Movie Genre.Genre",
+          "logicalLevel:Y10 - Movie Demo (ORCL).Time.Day-Date",
+          "logicalLevel:Y10 - Movie Demo (ORCL).Customers.Detail",
+          "logicalLevel:Y10 - Movie Demo (ORCL).Activities.Detail",
+          "logicalLevel:Y10 - Movie Demo (ORCL).Customer Segment.Detail",
+          "logicalLevel:Y10 - Movie Demo (ORCL).Customer Geography.Detail"
+        ]
+      }
+    ]
+  }
+}

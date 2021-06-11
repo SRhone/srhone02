@@ -1,0 +1,33 @@
+{
+  "logicalTable": {
+    "name": "POI_Facts",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "# of POIs",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GC_POI_NA",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.GC_POI_NA.POI_ID"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "GC_POI_NA",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.GC_POI_NA"
+          ]
+        }
+      }
+    ]
+  }
+}

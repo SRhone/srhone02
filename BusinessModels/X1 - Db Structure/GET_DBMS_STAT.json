@@ -1,0 +1,373 @@
+{
+  "logicalTable": {
+    "name": "GET_DBMS_STAT",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Bottom 5 values",
+        "dataType": "LONGVARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.BOTTOM_5_VALUES"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Count",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.COUNT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Extreme values",
+        "dataType": "LONGVARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.EXTREME_VALUES"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Extreme values count",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.EXTREME_VALUES_COUNT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Max",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.MAX"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Mean",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.MEAN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Median",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.MEDIAN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Min",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.MIN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Mode1",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.MODE1"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Mode count",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.MODE_COUNT"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Quantile 25",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.QUANTILE_25"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Quantile 5",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.QUANTILE_5"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Quantile 75",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.QUANTILE_75"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Quantile 95",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.QUANTILE_95"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Range",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.RANGE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Stddev",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.STDDEV"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Top 5 values",
+        "dataType": "LONGVARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.TOP_5_VALUES"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Variance",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.VARIANCE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Column",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.S_COLUMN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Schema",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.S_SCHEMA"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Table",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "GET_DBMS_STAT",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT.S_TABLE"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "GET_DBMS_STAT",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:X1 - ORCL Database Admin.SYS.GET_DBMS_STAT"
+          ]
+        }
+      }
+    ]
+  }
+}

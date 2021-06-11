@@ -1,0 +1,81 @@
+{
+  "logicalTable": {
+    "name": "Activities",
+    "type": "DIMENSION",
+    "logicalColumns": [ {
+        "name": "Activity ID",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "ACTIVITY",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Y10 - Movies Demo (ORCL).MOVIEDEMO.ACTIVITY.ACTIVITY_ID"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      },
+      {
+        "name": "Activity",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "ACTIVITY",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:Y10 - Movies Demo (ORCL).MOVIEDEMO.ACTIVITY.NAME"
+                ]
+              }
+            }
+          ]
+        },
+        "logicalLevel": "Detail"
+      }
+    ],
+    "primaryKey": [
+      "Activity ID"
+    ],
+    "logicalTableSources": [ {
+        "name": "ACTIVITY",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:Y10 - Movies Demo (ORCL).MOVIEDEMO.ACTIVITY"
+          ]
+        }
+      }
+    ],
+    "hierarchyType": "LEVEL_BASED",
+    "levelBasedHierarchy": {
+      "defaultRootLevel": "Total",
+      "logicalLevels": [
+        {
+          "name": "Total",
+          "grandTotalLevel": true,
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1
+        },
+        {
+          "name": "Detail",
+          "disableAggregateToHigherLevel": true,
+          "numberOfElements": 1,
+          "primaryKey": [
+            "Activity ID"
+          ],
+          "displayKey": "Activity ID"
+        }
+      ],
+      "logicalHierarchies": [ {
+          "name": "Activities",
+          "levels": [ "Total", "Detail" ]
+        }
+      ]
+    }
+  }
+}

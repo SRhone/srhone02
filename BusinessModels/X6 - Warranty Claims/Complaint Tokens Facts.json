@@ -1,0 +1,124 @@
+{
+  "logicalTable": {
+    "name": "Complaint Tokens Facts",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "# of Tokens",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK.TOKEN"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK with Claim Facts",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK.TOKEN"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sum of Token Freq",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK.FREQUENCY"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK with Claim Facts",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK.FREQUENCY"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "# of Claims",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK with Claim Facts",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.FACT_CLAIM.RECORDID"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg of Token Freq",
+        "dataType": "INT",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK.FREQUENCY"
+                ]
+              }
+            },
+            {
+              "logicalTableSource": "DIM_CLAIM_COMMENTS_TOK with Claim Facts",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK.FREQUENCY"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "DIM_CLAIM_COMMENTS_TOK",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK"
+          ]
+        }
+      },
+      {
+        "name": "DIM_CLAIM_COMMENTS_TOK with Claim Facts",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:X6 - Warranty Claims Data.ENDECA.FACT_CLAIM",
+            "physicalTable:X6 - Warranty Claims Data.ENDECA.DIM_CLAIM_COMMENTS_TOK"
+          ],
+          "logicalTableSourceJoins": [ {
+              "physicalJoin": "physicalJoin:X6 - Warranty Claims Data.FACT_CLAIM_Foreign Key#1"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1441 @@
+{
+  "logicalTable": {
+    "name": "Mumbai Demographics",
+    "type": "FACT",
+    "logicalColumns": [ {
+        "name": "Total Car Ownership",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.CAR_OWNERSHIP"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Color Tv Ownership",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.COLOR_TV_OWNERSHIP"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Clothing Footwear",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.EXP_CLOTHING_FOOTWEAR"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Durables Personal",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.EXP_DURABLES_PERSONAL"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Fmcg",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.EXP_FMCG"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Food Related",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.EXP_FOOD_RELATED"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Misc Goods Services",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.EXP_MISC_GOODS_SERVICES"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 150k - 300k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_150K_300K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 1m - 2m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_1M_2M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 2m - 5m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_2M_5M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 300k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_300K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 500k - 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_500K_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 5m - 10m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_5M_10M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn 75k - 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_75K_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn Gt 10m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_GT_10M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn Gt 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_GT_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Hh Earn Lt 75k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NUM_HH_EARN_LT_75K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Per Capita Expenditure",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.PER_CAPITA_EXPENDITURE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Per Capita Income",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.PER_CAPITA_INCOME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Per Capita Savings",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.PER_CAPITA_SAVINGS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 0 - 14",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_0_14"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 0 - 14 150k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_0_14_150K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 0 - 14 Gt 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_0_14_GT_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 0 - 14 Lt 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_0_14_LT_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 15 - 29",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_15_29"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 15 - 29 150k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_15_29_150K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 15 - 29 Gt 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_15_29_GT_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 15 - 29 Lt 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_15_29_LT_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 30 - 44",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_30_44"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 30 - 44 150k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_30_44_150K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 30 - 44 Gt 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_30_44_GT_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 30 - 44 Lt 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_30_44_LT_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 45 - 59",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_45_59"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 45 - 59 150k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_45_59_150K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 45 - 59 Gt 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_45_59_GT_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop 45 - 59 Lt 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_45_59_LT_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Gt 59",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_GT_59"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Gt 59 150k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_GT_59_150K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Gt 59 Gt 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_GT_59_GT_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Gt 59 Lt 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_GT_59_LT_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Hh Earn 150k - 300k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_HH_EARN_150K_300K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Hh Earn 300k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_HH_EARN_300K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Hh Earn 500k - 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_HH_EARN_500K_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Hh Earn 75k - 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_HH_EARN_75K_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Hh Earn Gt 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_HH_EARN_GT_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Pop Hh Earn Lt 75k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.POP_HH_EARN_LT_75K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Refrigerator Ownership",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.REFRIGERATOR_OWNERSHIP"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Household Expenditure",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLD_EXPENDITURE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Household Income",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLD_INCOME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Household Savings",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLD_SAVINGS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Households",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLDS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Population",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_POPULATION"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Hh Earn 150k - 3000k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTEXP_HH_EARN_150K_3000K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Hh Earn 300k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTEXP_HH_EARN_300K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Hh Earn 500k - 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTEXP_HH_EARN_500K_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Hh Earn 75k - 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTEXP_HH_EARN_75K_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Hh Earn Gt 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTEXP_HH_EARN_GT_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Exp Hh Earn Lt 75k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTEXP_HH_EARN_LT_75K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Inc Hh Earn 150k - 300k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTINC_HH_EARN_150K_300K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Inc Hh Earn 300k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTINC_HH_EARN_300K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Inc Hh Earn 500k - 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTINC_HH_EARN_500K_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Inc Hh Earn 75k - 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTINC_HH_EARN_75K_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Inc Hh Earn Gt 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTINC_HH_EARN_GT_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Inc Hh Earn Lt 75k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTINC_HH_EARN_LT_75K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Sav Hh Earn 150k - 300k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTSAV_HH_EARN_150K_300K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Sav Hh Earn 300k - 500k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTSAV_HH_EARN_300K_500K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Sav Hh Earn 500k - 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTSAV_HH_EARN_500K_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Sav Hh Earn 75k - 150k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTSAV_HH_EARN_75K_150K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Sav Hh Earn Gt 1m",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTSAV_HH_EARN_GT_1M"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Sav Hh Earn Lt 75k",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTSAV_HH_EARN_LT_75K"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Two Wheeler Ownership",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TWO_WHEELER_OWNERSHIP"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Urban Sec B Households",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.URBAN_SEC_B_HOUSEHOLDS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Urban Sec C Households",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.URBAN_SEC_C_HOUSEHOLDS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Urban Sec A Households",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.URBAN_SECA_HOUSEHOLDS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Urban Sec D And E Households",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.URBANSEC_D_AND_E_HOUSEHOLDS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Total Washing Machine Ownership",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.WASHING_MACHINE_OWNERSHIP"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Sum Neighbourhood Area",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NEIGHBOURHOOD_AREA"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Household Expenditure",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLD_EXPENDITURE"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Household Income",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLD_INCOME"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Household Savings",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.TOTAL_HOUSEHOLD_SAVINGS"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Neighbourhood Area",
+        "dataType": "DOUBLE",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.NEIGHBOURHOOD_AREA"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "# of Neighbourhoods",
+        "dataType": "VARCHAR",
+        "logicalColumnSource": {
+          "derivedFrom": "PHYSICAL_COLUMNS",
+          "physicalMappings": [ {
+              "logicalTableSource": "Indc Mumbai Sample",
+              "physicalExpression": {
+                "expressionTemplate": "%1",
+                "expressionObjects": [
+                  "physicalColumn:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE.WARDCODE_G"
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "Avg Hh Members",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "cast(%1  as double)/%2 ",
+            "expressionObjects": [
+              "logicalColumn:07 - Spatial Samples.Mumbai Demographics.Total Population",
+              "logicalColumn:07 - Spatial Samples.Mumbai Demographics.Total Households"
+            ]
+          }
+        }
+      },
+      {
+        "name": "Population Density",
+        "dataType": "UNKNOWN",
+        "logicalColumnSource": {
+          "derivedFrom": "LOGICAL_COLUMNS",
+          "logicalExpression": {
+            "expressionTemplate": "cast(%1  as double)/%2 ",
+            "expressionObjects": [
+              "logicalColumn:07 - Spatial Samples.Mumbai Demographics.Total Population",
+              "logicalColumn:07 - Spatial Samples.Mumbai Demographics.Sum Neighbourhood Area"
+            ]
+          }
+        }
+      }
+    ],
+    "logicalTableSources": [ {
+        "name": "Indc Mumbai Sample",
+        "tableMapping": {
+          "tables": [
+            "physicalTable:09 - Sample Geo Data (ORCL).OBIEE_NAVTEQ.INDC_MUMBAI_SAMPLE"
+          ]
+        },
+        "dataGranularity": [
+          "logicalLevel:07 - Spatial Samples.Mumbai Areas.Mumbai Areas Detail"
+        ]
+      }
+    ]
+  }
+}
